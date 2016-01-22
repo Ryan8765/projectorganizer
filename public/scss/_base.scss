@@ -1,0 +1,330 @@
+// =============================
+// Base Styles
+// =============================
+
+.well {
+	border: 1px solid #7A7A7A !important;
+
+}
+
+.list-group-item.task-item {
+	border: 1px solid #414141 !important;
+}
+
+#task-container {
+	margin-bottom: 0;
+}
+
+.item-panel-body {
+	background-color: #f5f5f5;
+	border: 2px solid #6C6C6C !important;
+}
+
+.completed-item {
+	color: #A8A8A8;
+	text-decoration: line-through;
+}
+
+.uncompleted-item {
+	font-weight: bolder;
+}
+
+.well {
+    // background-color: #616161 !important;
+    // color: white;
+}
+// yes
+
+// error colors for parsley
+.parsley-errors-list li {
+
+	color: red;
+	background-color: #FFCFCF;
+	border: 1px solid red;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.list-group-item {
+	border: 1px solid #C0C0C0 !important;
+}
+
+
+
+nav.navbar.navbar-default {
+	height: 50px;
+	background-color: #222222;
+	color: white;
+	padding-right: 25px;
+	padding-left: 25px;
+
+	.title {
+		float: left;
+		height: 50px;
+		line-height: 50px;
+		font-size: 20px;
+	}
+
+	li a {
+		color: #C0C0C0;
+		text-decoration: none;
+		@include transition( color, 1s );
+		&:hover {
+			text-decoration: none;
+			color: orange;
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	padding: 10px;
+}
+
+/* Class's
+=====================================*/
+
+.add-task-form {
+	display: none;
+}
+
+.glyphicon {
+	background-color: white !important;
+}
+
+.project-title {
+	cursor: pointer;
+
+	@include transition( color, .5s );
+	&:hover {
+		color: orange;
+	}
+}
+
+.mastfoot {
+	p {
+		text-align: center;
+	}
+}
+
+.delete-projects-modal {
+	p {
+		text-align: center;
+	}
+}
+
+.show-filters-button {
+	position: absolute;
+	right: 5px;
+	top: 55px;
+	cursor: pointer;
+	z-index: 250;
+
+
+	span {
+		@include transition( color, 2s );
+		font-size: 30px;
+
+		&:hover {
+			color: orange;
+		}
+	}
+}
+
+
+.dates, .priority {
+	font-style: italic;
+	color: #A1A1A1;
+}
+
+
+.show-task-menu-button {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+}
+
+.list-group-item.task-item {
+	padding-top: 30px;
+}
+
+.menu-buttons {
+	position: absolute;
+	top:4px;
+	left: 0;
+	right: 35px;
+	text-align: right;
+	display: none;
+	
+
+	.menu-button-item {
+		display: inline;
+		margin-right: 15px;
+		cursor: pointer;
+		padding: 7px;
+		@include transition( color, 1s );
+
+		&:hover {
+			color: orange;
+		}
+	}
+
+	.glyphicon {
+		font-size: 1.2em;
+	}
+}
+
+
+.show-task-form {
+	cursor: pointer;
+
+	@include transition( color, .5s );
+
+	&:hover {
+		color: orange;
+	}
+}
+
+
+
+.margin-top {
+	margin-top: 10px;
+}
+
+
+.filters {
+	display: none;
+	width: 300px;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	z-index: 200;
+	background-color: white;
+	box-shadow: -5px 5px 10px #474646;
+	padding: 10px 10px 20px 10px;
+
+	select {
+		cursor: pointer;
+	}
+}
+
+.projects {
+	display: none;
+	width: 320px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	z-index: 100;
+	background-color: white;
+	box-shadow: 5px 5px 10px #474646;
+
+	h5 {
+		text-align: left;
+		margin-left: 15px;
+		cursor: pointer;
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+		padding: 8px !important;
+
+		@include transition( color, .5s );
+
+		&:hover {
+			color: orange;
+		}
+	}
+
+
+	li {
+		padding-top: 25px;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+		@include transition( color, .5s );
+
+		&:hover {
+			text-decoration: none;
+			color: orange;
+		}
+
+		&:active {
+			text-decoration: none;
+		}
+	}
+}
+
+.project-menu-icon {
+	position: absolute;
+	left: 5px;
+	top: 55px;
+	z-index: 200;
+	span {
+		cursor: pointer;
+		font-size: 30px;
+		@include transition( color, 1s );
+
+		&:hover {
+			color: orange;
+		}
+	}
+}
+
+.projects-menu-button {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+
+.projects-menu {
+	position: absolute;
+	top: 0px;
+	right: 40px;
+	left: 0;
+	text-align: center;
+	display: none;
+
+	span {
+		margin-left: 7px;
+		margin-right: 7px;
+		font-size: 1.1em;
+		cursor: pointer;
+		padding: 6px;
+		@include transition( color, 1s );
+
+		&:hover {
+			color: orange;
+		}
+		
+	}
+}
+
+.glyphicon-menu-hamburger {
+	cursor: pointer;
+}
+
+
+
+
+/* Id's
+=====================================*/
+
+
+
+/* Animations
+=====================================*/
+
+
+
+
+
+
+
+
+
